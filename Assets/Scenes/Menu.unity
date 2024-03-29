@@ -205,7 +205,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 21096442}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 303242487}
+        m_TargetAssemblyTypeName: GuardarPersonaje, Assembly-CSharp
+        m_MethodName: PersonajeGato
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &21096442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -253,6 +265,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 303242486}
+  - component: {fileID: 303242488}
   - component: {fileID: 303242487}
   m_Layer: 0
   m_Name: Funciones
@@ -291,6 +304,19 @@ MonoBehaviour:
   Gato: 0
   Perro: 0
   Conejo: 0
+--- !u!114 &303242488
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 303242485}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ccc1c70746cdad44880bb5d4ddded8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  funciones: {fileID: 0}
 --- !u!1 &447131078
 GameObject:
   m_ObjectHideFlags: 0
@@ -623,7 +649,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1089321732}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 303242487}
+        m_TargetAssemblyTypeName: GuardarPersonaje, Assembly-CSharp
+        m_MethodName: PersonajeConejo
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1089321732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,7 +782,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1246775922}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 303242488}
+        m_TargetAssemblyTypeName: CambioEscena, Assembly-CSharp
+        m_MethodName: cambiar
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1246775922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,7 +915,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1405316779}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 303242487}
+        m_TargetAssemblyTypeName: GuardarPersonaje, Assembly-CSharp
+        m_MethodName: PersonajePerro
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1405316779
 MonoBehaviour:
   m_ObjectHideFlags: 0
