@@ -15,9 +15,9 @@ public class GuardarPersonaje : MonoBehaviour
         {
             Gato = true;
         }
-        Gato= PlayerPrefs,GetInt("seleccionGato") == 1;
-        Perro= PlayerPrefs,GetInt("seleccionPerro") == 1;
-        Conejo= PlayerPrefs,GetInt("seleccionConejo") == 1;
+        Gato = PlayerPrefs.GetInt("seleccionGato") == 1;
+        Perro = PlayerPrefs.GetInt("seleccionPerro") == 1;
+        Conejo = PlayerPrefs.GetInt("seleccionConejo") == 1;
     }
 
     public void PersonajeGato()
