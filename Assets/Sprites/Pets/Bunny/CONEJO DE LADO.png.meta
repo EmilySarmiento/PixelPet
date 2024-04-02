@@ -125,9 +125,273 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CONEJO DE LADO_0
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 185
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecf9d64b7ac994341b60a4fd3f936213
+      internalID: -715575473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_1
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 230
+        width: 70
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c56baf3928de2a4439798206e2195dce
+      internalID: 463186351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_2
+      rect:
+        serializedVersion: 2
+        x: 314
+        y: 235
+        width: 85
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d65ed394473ff46bcd0d58247c8162
+      internalID: -1010365376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_3
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 185
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d767f0cfb4c776744a9e00e9f33334cf
+      internalID: 532835401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_4
+      rect:
+        serializedVersion: 2
+        x: 223
+        y: 185
+        width: 50
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3ed0bb07bc2a7444a680b1509026914
+      internalID: -1274632305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_5
+      rect:
+        serializedVersion: 2
+        x: 334
+        y: 185
+        width: 50
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d4ca4df8df7fb4cba3d77bede11647
+      internalID: 1060074878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 25
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0df051dd057481949ae964305fa342ab
+      internalID: -363257568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_7
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 75
+        width: 85
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67239698c2ecf3d498a0e37b74681f19
+      internalID: -355732224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_8
+      rect:
+        serializedVersion: 2
+        x: 335
+        y: 70
+        width: 70
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3eba48dcd2a937c44a97b61690364b95
+      internalID: 800562631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_9
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 25
+        width: 75
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87f6ef666571f75459f1fac37b52d061
+      internalID: -1929093328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_10
+      rect:
+        serializedVersion: 2
+        x: 229
+        y: 25
+        width: 50
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3848e4d9d6f0e34face7059ae6a30f5
+      internalID: 1065686951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CONEJO DE LADO_11
+      rect:
+        serializedVersion: 2
+        x: 340
+        y: 25
+        width: 50
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 814f88bd3109b3240acfc56dd4617711
+      internalID: 1564622862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -138,7 +402,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CONEJO DE LADO_0: -715575473
+      CONEJO DE LADO_1: 463186351
+      CONEJO DE LADO_10: 1065686951
+      CONEJO DE LADO_11: 1564622862
+      CONEJO DE LADO_2: -1010365376
+      CONEJO DE LADO_3: 532835401
+      CONEJO DE LADO_4: -1274632305
+      CONEJO DE LADO_5: 1060074878
+      CONEJO DE LADO_6: -363257568
+      CONEJO DE LADO_7: -355732224
+      CONEJO DE LADO_8: 800562631
+      CONEJO DE LADO_9: -1929093328
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
