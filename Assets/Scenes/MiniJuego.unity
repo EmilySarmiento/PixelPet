@@ -1676,7 +1676,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  jumpStreng: 3
+  jumpStreng: 4
   maxJumps: 1
   capaSuelo:
     serializedVersion: 2

@@ -12,4 +12,10 @@ public class CambioEscena : MonoBehaviour
         SceneManager.LoadScene("MiniJuego");
         funciones.GetComponent<GuardarPersonaje>().Guardar();
     }
+
+    public void BotonSalir()
+    {
+        Debug.Log("Salir del juego");
+        Application.Quit();
+    }
 }
