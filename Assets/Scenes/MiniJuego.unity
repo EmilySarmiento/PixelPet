@@ -404,13 +404,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 273f651b2ee07904183fa83927226e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 11
   jumpStreng: 3
   maxJumps: 1
   capaSuelo:
     serializedVersion: 2
     m_Bits: 256
   sonidoSalto: {fileID: 0}
+  maxBounceAngle: 75
 --- !u!61 &178174900
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -885,13 +886,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 273f651b2ee07904183fa83927226e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 11
   jumpStreng: 3
   maxJumps: 1
   capaSuelo:
     serializedVersion: 2
     m_Bits: 256
   sonidoSalto: {fileID: 0}
+  maxBounceAngle: 75
 --- !u!50 &605109638
 Rigidbody2D:
   serializedVersion: 4
@@ -2550,13 +2552,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 273f651b2ee07904183fa83927226e9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 10
+  speed: 11
   jumpStreng: 4
   maxJumps: 1
   capaSuelo:
     serializedVersion: 2
     m_Bits: 256
   sonidoSalto: {fileID: 0}
+  maxBounceAngle: 75
 --- !u!50 &1446848316
 Rigidbody2D:
   serializedVersion: 4
@@ -3038,7 +3041,7 @@ GameObject:
   - component: {fileID: 2037442527}
   m_Layer: 0
   m_Name: pelota
-  m_TagString: Untagged
+  m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3159,7 +3162,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 272ddd542c458e84fbf0c8ffd73a9777, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 10
 --- !u!1 &2130884027
 GameObject:
   m_ObjectHideFlags: 0

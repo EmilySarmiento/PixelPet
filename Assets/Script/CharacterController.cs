@@ -6,9 +6,10 @@ public class CharacterController : MonoBehaviour
 {
     public float speed; //Velocidad
     public float jumpStreng; //Fuerza del salto
-    public int maxJumps; //Máximo de saltos
+    public int maxJumps; //Mï¿½ximo de saltos
     public LayerMask capaSuelo;
     public AudioClip sonidoSalto;
+    public float maxBounceAngle = 75f;
 
     private Rigidbody2D rigidBody;
     private BoxCollider2D boxcollider;
@@ -54,8 +55,8 @@ public class CharacterController : MonoBehaviour
 
     void procesarMovimiento()
     {
-        //Lógica de movimiento//
-        //Revisa la tecla que esté presinando el jugador
+        //Lï¿½gica de movimiento//
+        //Revisa la tecla que estï¿½ presinando el jugador
         float inputMovimiento = Input.GetAxis("Horizontal");
 
         //if (inputMovimiento != 0)
@@ -73,7 +74,7 @@ public class CharacterController : MonoBehaviour
 
     void gestionarOrientacion(float inputMovimiento)
     {
-        //Si se cumple la condición
+        //Si se cumple la condiciï¿½n
         if ((mirandoDerecha == true && inputMovimiento < 0)||(mirandoDerecha == false && inputMovimiento > 0))
         {
             //Voltear al personaje
@@ -81,6 +82,30 @@ public class CharacterController : MonoBehaviour
             transform.localScale = new Vector2(-transform.localScale.x, transform.localScale.y);
         }
 
+    }
+
+    //collision
+
+     private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (!collision.gameObject.CompareTag("Ball")) {
+            return;
+        }
+
+        Rigidbody2D ball = collision.rigidbody;
+        Collider2D paddle = collision.otherCollider;
+
+        // Gather information about the collision
+        Vector2 ballDirection = ball.velocity.normalized;
+        Vector2 contactDistance = paddle.bounds.center - ball.transform.position;
+
+        // Rotate the direction of the ball based on the contact distance
+        // to make the gameplay more dynamic and interesting
+        float bounceAngle = (contactDistance.x / paddle.bounds.size.x) * maxBounceAngle;
+        ballDirection = Quaternion.AngleAxis(bounceAngle, Vector3.forward) * ballDirection;
+
+        // Re-apply the new direction to the ball
+        ball.velocity = ballDirection * ball.velocity.magnitude;
     }
     
 }
