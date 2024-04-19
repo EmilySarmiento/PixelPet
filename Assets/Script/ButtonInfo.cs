@@ -12,8 +12,10 @@ public Text PirceTxt;
 public Text QuantityTxt;
 public GameObject ShopManager;
 
-void Update()
+void Start()
 {
+   PirceTxt.text = "Price: $" + ShopManager.GetComponent<ShopManagerScript>().shopItems[2, ItemID].ToString();
+   QuantityTxt.text = "Price: $" + ShopManager.GetComponent<ShopManagerScript>().shopItems[3, ItemID].ToString();
 }
 
 }
