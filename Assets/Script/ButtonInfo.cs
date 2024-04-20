@@ -7,15 +7,15 @@ public class ButtonInfo : MonoBehaviour
 
 {
   
-public int ItemID;
-public Text PirceTxt;
-public Text QuantityTxt;
-public GameObject ShopManager;
+    public int ItemID;
+    public Text PirceTxt;
+    public Text QuantityTxt;
+    public GameObject ShopManager;
 
-void Start()
-{
-   PirceTxt.text = "Price: $" + ShopManager.GetComponent<ShopManagerScript>().shopItems[2, ItemID].ToString();
-   QuantityTxt.text = "Price: $" + ShopManager.GetComponent<ShopManagerScript>().shopItems[3, ItemID].ToString();
-}
+    void Update()
+    {
+       PirceTxt.text = "Price: $" + ShopManager.GetComponent<ShopManagerScript>().shopItems[2, ItemID].ToString();
+       QuantityTxt.text = ShopManager.GetComponent<ShopManagerScript>().shopItems[3, ItemID].ToString();
+    }
 
 }
