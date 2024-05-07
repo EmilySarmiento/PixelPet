@@ -21,4 +21,6 @@ public class CambioEscena : MonoBehaviour
         Debug.Log("Salir del juego");
         Application.Quit();
     }
+
+
 }
