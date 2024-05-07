@@ -1,12 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Ball : MonoBehaviour
 {
     private Rigidbody2D rb;
     public float speed = 10f;
+
+
+
+    //texto
+    public string textValue;
+    public Text textElement;
 
     private void Awake()
     {
@@ -40,5 +47,19 @@ public class Ball : MonoBehaviour
     {
         rb.velocity = rb.velocity.normalized * speed;
     }
+
+
+    //Cuando la pelota choca contra en suelo
+  
+     private void OnTriggerEnter2D(Collider2D collision)
+     {
+        if (collision.gameObject.CompareTag("Suelo"))
+        {
+            textElement.text = textValue;
+        }
+     }
+
+
+ 
 
 }

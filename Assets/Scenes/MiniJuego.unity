@@ -5144,6 +5144,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
+  textValue: 
+  textElement: {fileID: 0}
 --- !u!1001 &2084502170
 PrefabInstance:
   m_ObjectHideFlags: 0
