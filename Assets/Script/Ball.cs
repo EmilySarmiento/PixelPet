@@ -1,16 +1,19 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.Intrinsics;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Ball : MonoBehaviour
 {
+    public GameObject ball;
+
     private Rigidbody2D rb;
     public float speed = 10f;
-
 
 
     //texto
@@ -57,9 +60,12 @@ public class Ball : MonoBehaviour
      {
         if (collision.gameObject.CompareTag("Suelo"))
         {
-            Debug.Log("Perdiste sorry");
-            textElement.text = textValue;
-            
+            //Debug.Log("Perdiste sorry");
+            //Time.timeScale = 0.1f;
+            //textElement.gameObject.SetActive(true);
+            //textElement.text = textValue;
+            ball.SetActive(false);
+            SceneManager.LoadScene(2);
         }
      }
 
