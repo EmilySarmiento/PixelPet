@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Ball : MonoBehaviour
@@ -55,7 +57,9 @@ public class Ball : MonoBehaviour
      {
         if (collision.gameObject.CompareTag("Suelo"))
         {
+            Debug.Log("Perdiste sorry");
             textElement.text = textValue;
+            
         }
      }
 
