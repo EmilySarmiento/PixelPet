@@ -24,6 +24,6 @@ public class Puntaje : MonoBehaviour
 	public void SumarPuntos(float puntosEntrada)
 	{
 		puntos += puntosEntrada;
-
+		PlayerPrefs.SetFloat("Puntaje", puntos);
 	}
 }
