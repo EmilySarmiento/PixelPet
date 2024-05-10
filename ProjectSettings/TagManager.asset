@@ -8,6 +8,10 @@ TagManager:
   - Brick
   - Event
   - Suelo
+  - MonoRosa
+  - Fresa
+  - Jabon
+  - Oso
   layers:
   - Default
   - TransparentFX

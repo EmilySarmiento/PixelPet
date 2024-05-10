@@ -68,8 +68,4 @@ public class Ball : MonoBehaviour
             SceneManager.LoadScene(2);
         }
      }
-
-
- 
-
 }
