@@ -11,4 +11,9 @@ public class ControlTienda : MonoBehaviour
     {
         canvasTienda.SetActive(true); // Activa el Canvas de la tienda
     }
+
+    public void SalirTienda()
+    {
+        canvasTienda.SetActive(false);
+    }
 }

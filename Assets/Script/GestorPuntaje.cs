@@ -7,6 +7,7 @@ public class GestorPuntaje : MonoBehaviour
 {
     public TextMeshProUGUI textoPuntaje;
 
+
     void Start()
     {
         // Recuperar el puntaje guardado en PlayerPrefs
