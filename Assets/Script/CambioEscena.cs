@@ -10,9 +10,7 @@ public class CambioEscena : MonoBehaviour
     public void cambiar(string nombre)
     {
         SceneManager.LoadScene(nombre);
-        funciones.GetComponent<GuardarPersonaje>().Guardar();
-
-       // SceneManager.LoadScene("Habitacion");
+        funciones.GetComponent<GuardarPersonaje>().Guardar();   
     }
     
 
@@ -21,6 +19,5 @@ public class CambioEscena : MonoBehaviour
         Debug.Log("Salir del juego");
         Application.Quit();
     }
-
 
 }

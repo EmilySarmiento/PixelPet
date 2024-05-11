@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Habitacion.unity
     guid: 5a4025a2f16d22041a24db7f640af481
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 805227bb047033e4fad10aa4b9236ace
   m_configObjects: {}
