@@ -19,7 +19,7 @@ public class Puntaje : MonoBehaviour
 	{
         puntos += Time.deltaTime;
         textMesh.text = puntos.ToString("0");
-	}
+    }
 
     public void SumarPuntos(float puntosEntrada)
     {
