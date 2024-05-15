@@ -355,6 +355,42 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 154726172}
   m_CullTransparentMesh: 1
+--- !u!1 &163888397
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 163888398}
+  m_Layer: 5
+  m_Name: objectbuy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &163888398
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 163888397}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1864598118}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 224, y: -47}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &194839776
 GameObject:
   m_ObjectHideFlags: 0
@@ -2648,6 +2684,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 580c4a2780c70a74392e9cdd93232a43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  articuloPrefab: {fileID: 7349359922456061771, guid: 42f27993a7bd3d4418aa69ee4ebfaf68, type: 3}
+  spawnPoint: {fileID: 163888398}
   coins: 100
   CoinsTXT: {fileID: 403135419}
   gestorPuntaje: {fileID: 1826495175}
@@ -4172,6 +4210,7 @@ RectTransform:
   - {fileID: 465412917}
   - {fileID: 1220194072}
   - {fileID: 635145282}
+  - {fileID: 163888398}
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

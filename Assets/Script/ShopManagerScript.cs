@@ -8,6 +8,8 @@ using TMPro;
 
 public class ShopManagerScript : MonoBehaviour
 {
+    public GameObject articuloPrefab; // Asigna el prefab del artículo en el Inspector
+    public Transform spawnPoint; // Punto de aparición del artículo
 
     public int[,] shopItems = new int[5, 5];
     public float coins;
@@ -50,6 +52,8 @@ public class ShopManagerScript : MonoBehaviour
             shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
             CoinsTXT.text = "Coins:" + coins.ToString();
             ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
+
+            Instantiate(articuloPrefab, spawnPoint.position, Quaternion.identity);
         }
     }   
 }
