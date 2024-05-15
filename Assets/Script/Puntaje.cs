@@ -13,6 +13,7 @@ public class Puntaje : MonoBehaviour
 	private void Start()
 	{
 		textMesh = GetComponent<TextMeshProUGUI>();
+		puntos = PlayerPrefs.GetFloat("Puntaje", 0f);
 	}
  
 	private void Update()
@@ -25,6 +26,7 @@ public class Puntaje : MonoBehaviour
     {
         puntos += puntosEntrada;
         PlayerPrefs.SetFloat("Puntaje", puntos);
+		PlayerPrefs.Save();
     }
 
 }
