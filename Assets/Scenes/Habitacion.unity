@@ -1120,6 +1120,7 @@ MonoBehaviour:
   comidaMax: 20
   comidaActual: 10
   ImagenBarraComida: {fileID: 1757349432}
+  Buttoncomida: {fileID: 0}
   ChargeRate: 2
   comidaAlMaximo: 0
 --- !u!1 &523156222
@@ -2406,6 +2407,7 @@ MonoBehaviour:
   comidaMax: 20
   comidaActual: 10
   ImagenBarraComida: {fileID: 1757349432}
+  Buttoncomida: {fileID: 0}
   ChargeRate: 1
   comidaAlMaximo: 0
 --- !u!1 &1220194071
@@ -2490,7 +2492,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1220194074}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 11500000, guid: 043071b283051c04b9e779561b5498d1, type: 3}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1220194074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4488,6 +4502,7 @@ MonoBehaviour:
   comidaMax: 20
   comidaActual: 10
   ImagenBarraComida: {fileID: 1757349432}
+  Buttoncomida: {fileID: 0}
   ChargeRate: 1
   comidaAlMaximo: 0
 --- !u!1 &2020031106
