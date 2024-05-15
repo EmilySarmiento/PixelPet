@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using TMPro;
 
 public class ShopManagerScript : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class ShopManagerScript : MonoBehaviour
     public int[,] shopItems = new int[5, 5];
     public float coins;
     public Text CoinsTXT;
+    public GestorPuntaje gestorPuntaje;
 
     void Start()
     {
@@ -42,15 +44,12 @@ public class ShopManagerScript : MonoBehaviour
 
         if (coins >= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID])
         {
-            coins -= shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            float precioArticulo = shopItems[2, ButtonRef.GetComponent<ButtonInfo>().ItemID];
+            coins -= precioArticulo;
+            gestorPuntaje.SumarPuntos(-precioArticulo); // Restar el precio del artículo al puntaje del jugador
             shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID]++;
             CoinsTXT.text = "Coins:" + coins.ToString();
             ButtonRef.GetComponent<ButtonInfo>().QuantityTxt.text = shopItems[3, ButtonRef.GetComponent<ButtonInfo>().ItemID].ToString();
-            {
-
-
-            }
         }
-
-    }
+    }   
 }

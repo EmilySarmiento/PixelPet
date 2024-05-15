@@ -14,11 +14,19 @@ public class Puntaje : MonoBehaviour
 	{
 		textMesh = GetComponent<TextMeshProUGUI>();
 		puntos = PlayerPrefs.GetFloat("Puntaje", 0f);
+		ActualizarTextoPuntaje();
+
 	}
  
 	private void Update()
 	{
         puntos += Time.deltaTime;
+        textMesh.text = puntos.ToString("0");
+    }
+
+	 private void ActualizarTextoPuntaje()
+    {
+        // Actualizar el texto con los puntos
         textMesh.text = puntos.ToString("0");
     }
 
@@ -28,5 +36,17 @@ public class Puntaje : MonoBehaviour
         PlayerPrefs.SetFloat("Puntaje", puntos);
 		PlayerPrefs.Save();
     }
+
+	 /*public void ModificarPuntos(float puntosModificados)
+    {
+        // Modificar los puntos según el valor proporcionado
+        puntos += puntosModificados;
+        // Guardar puntos
+        PlayerPrefs.SetFloat("Puntaje", puntos);
+        // Asegurarse de guardar los cambios en PlayerPrefs
+        PlayerPrefs.Save();
+        // Actualizar el texto con los puntos
+        ActualizarTextoPuntaje();
+    }*/
 
 }

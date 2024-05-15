@@ -29,4 +29,5 @@ public class GestorPuntaje : MonoBehaviour
     {
         return puntaje;
     }
+    
 }
