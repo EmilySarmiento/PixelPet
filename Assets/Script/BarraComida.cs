@@ -12,45 +12,40 @@ public class BarraComida : MonoBehaviour
 
     public float ChargeRate;
 
-    public bool comidaAlMaximo = false;
-
+    
     void Start()
     {
-        comidaActual = comidaMax;
+        comidaActual = comidaMax / 2;
+        ActualizarBarraComida();
+        StartCoroutine(BajarBarra());
     }
 
-    void Update()
+    public void SubirComida()
     {
-        RevisarComida();
-
-        if (comidaActual == comidaMax)
+        float aumento = comidaMax * 0.1f; // Calcular un aumento del 10%
+        comidaActual += aumento; // Aumentar la comida actual
+        if (comidaActual > comidaMax) // Asegurar que la comida actual no exceda el máximo
         {
-            comidaAlMaximo = true;
+            comidaActual = comidaMax;
         }
+        ActualizarBarraComida(); 
     }
 
-    public void RevisarComida()
+    void ActualizarBarraComida()
     {
-        ImagenBarraComida.fillAmount = comidaActual / comidaMax;
+        ImagenBarraComida.fillAmount = comidaActual / comidaMax; 
     }
 
-    public void SubirComida() // Add this method
-    {
-        if (!comidaAlMaximo)
-        {
-             comidaActual += ChargeRate + 10f;
-        }
-    }
 
     private IEnumerator BajarBarra()
     {
-        yield return new WaitForSeconds(1f);
-        while (comidaActual < comidaMax)
+        yield return new WaitForSeconds(5f);
+        while (comidaActual > 0)
         {
-            comidaActual += ChargeRate / 10f;
-            if (comidaActual > comidaMax) comidaActual = comidaMax;
+            comidaActual -= ChargeRate / 10f;
+            if (comidaActual < 0) comidaActual = 0;
             ImagenBarraComida.fillAmount = comidaActual / comidaMax;
-            yield return new WaitForSeconds(.1f);
+            yield return new WaitForSeconds(10f);
         }
     }
 }
